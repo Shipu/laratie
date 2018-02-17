@@ -1,0 +1,29 @@
+{
+    "name": "shipu/laratie",
+    "description": "Laravel Package Boilerplate",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shipu Ahamed",
+            "email": "shipuahamed01@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shipu\\Tie\\": "src/"
+        }
+    },
+    "require": {},
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shipu\\Tie\\LaravelTieServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    }
+}
