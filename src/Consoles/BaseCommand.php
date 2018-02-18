@@ -244,7 +244,7 @@ abstract class BaseCommand extends Command
             $rootStub = data_get($this->config->get($rootStub), 'path',  '');
         }
 
-        $path = basename(base_path()) . str_replace(base_path(), '', $path) . '/' . $rootStub;
+        $path = str_replace(base_path().'/', '', $path) . '/' . $rootStub;
 
         $data["autoload"]["psr-4"] = array_merge($data["autoload"]["psr-4"], [ $namespace => $path ]);
         $this->filesystem->put(base_path($output), json_encode($data, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
