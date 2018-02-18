@@ -9,6 +9,13 @@ use Shipu\Tie\Console\TieResourceCommand;
 class LaravelTieServiceProvider extends ServiceProvider
 {
     /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = true;
+
+    /**
      * Bootstrap the application services.
      *
      * @return void
@@ -28,13 +35,13 @@ class LaravelTieServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->consoleCommand();
+        $this->publishConfig();
     }
 
     /**
      * Publish config.
      */
-    protected function consoleCommand()
+    protected function publishConfig()
     {
         $source = realpath(__DIR__.'/../config/tie.php');
         // Check if the application is a Laravel OR Lumen instance to properly merge the configuration file.
