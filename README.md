@@ -24,6 +24,12 @@ Below **Laravel 5.5** open `config/app` and add this line in `providers` section
 ```php
 Shipu\Tie\LaravelTieServiceProvider::class,
 ```
+Now run this command in your terminal to publish this package resources:
+
+```
+php artisan vendor:publish
+```
+
 ## Quick Configuration
 Some configuration need for use this package. Open `config/tie.php` and update 
 ```
