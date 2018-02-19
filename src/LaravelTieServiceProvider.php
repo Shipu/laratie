@@ -11,13 +11,6 @@ use Laravel\Lumen\Application as LumenApplication;
 class LaravelTieServiceProvider extends ServiceProvider
 {
     /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = true;
-
-    /**
      * Bootstrap the application services.
      *
      * @return void
@@ -48,7 +41,7 @@ class LaravelTieServiceProvider extends ServiceProvider
         $source = realpath(__DIR__.'/../config/tie.php');
         // Check if the application is a Laravel OR Lumen instance to properly merge the configuration file.
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
-            $this->publishes([$source => config_path('tie.php')]);
+            $this->publishes([$source => config_path('tie.php')], 'tie-config');
         } elseif ($this->app instanceof LumenApplication) {
             $this->app->configure('tie');
         }
