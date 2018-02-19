@@ -27,7 +27,7 @@ Shipu\Tie\LaravelTieServiceProvider::class,
 Now run this command in your terminal to publish this package resources:
 
 ```
-php artisan vendor:publish --provider="Shipu\Tie\LaravelTieServiceProvider"
+php artisan vendor:publish --tag=tie-config
 ```
 
 ## Quick Configuration
