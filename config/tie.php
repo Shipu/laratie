@@ -14,7 +14,7 @@ return [
     'stubs'         => [
         'path'      => [
             // adding more stub path for customize stub or new stub
-            base_path('vendor/shipu/laravel-tie/src/Consoles/stubs'),
+            base_path('vendor/shipu/laratie/src/Consoles/stubs'),
         ],
         'default'   => [
             // default stub key here
