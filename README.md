@@ -30,12 +30,6 @@ Now run this command in your terminal to publish this package resources:
 php artisan vendor:publish --tag=tie-config
 ```
 
-## Quick Configuration
-Some configuration need for use this package. Open `config/tie.php` and update 
-```
-'vendor'        => '', // Your github username. For Example 'vendor' => 'shipu'
-'rootNamespace' => '', // Root Namespace For Example: 'rootNamespace' => 'Shipu'
-```
 ## Quick Usages
 Go to terminal and run this command
 ```shell
@@ -74,6 +68,20 @@ Available `stubKey` :
 --key
 ```
 If you have your own custom `stubKey` then you can choose `--key` for create package resource and value will be your stubKey.  
+
+### Package Root Directory
+If you need to change your all packages root directory then Open `config/tie.php` and update `root` directory path. 
+```
+'root'          => base_path('packages'), // Base directory
+```
+
+### Pckage Owner
+Open `config/tie.php` for setup your vendor name and rootNamespace. It's not mendatory.
+```
+'vendor'        => '', // Your github username. For Example 'vendor' => 'shipu'
+'rootNamespace' => '', // Root Namespace For Example: 'rootNamespace'   => 'Shipu'
+```
+
 ### Package Structure 
 Open `config/tie.php` for setup your own package structure. Available configuration: 
 ```
@@ -107,6 +115,7 @@ return [
     ...
 ];
 ```
+
 ### Package Stub configuration
 Open `config/tie.php` : 
 ```
@@ -132,6 +141,7 @@ return [
     ...
 ];
 ```
+
 ### String Replacement
 For replace string to another string on stub template. Open `config/tie.php` :
 ```
