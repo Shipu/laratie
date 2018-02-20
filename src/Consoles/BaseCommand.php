@@ -24,9 +24,32 @@ abstract class BaseCommand extends Command
      */
     protected $config;
 
+    /**
+     * Package Location.
+     *
+     * @var string
+     */
     protected $path;
+    
+    /**
+     * Package Name.
+     *
+     * @var string
+     */
     protected $package;
+    
+    /**
+     * Vendor Name.
+     *
+     * @var Filesystem
+     */
     protected $vendor;
+    
+    /**
+     * Namespace for stub class.
+     *
+     * @var string
+     */
     protected $namespace;
 
     /**
