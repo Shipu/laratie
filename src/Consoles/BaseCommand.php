@@ -185,6 +185,8 @@ abstract class BaseCommand extends Command
             case 'kebab':
                 return kebab_case($name);
         }
+        
+        return $name;
     }
 
     /**
@@ -220,7 +222,7 @@ abstract class BaseCommand extends Command
             'VENDOR_NAME'        => studly_case($this->vendor),
             'PACKAGE_NAME_LOWER' => strtolower($this->package),
             'PACKAGE_NAME'       => studly_case($this->package),
-            'DummyClass'         => $className,
+            'DummyClass'         => studly_case($className),
             'DummyTarget'        => strtolower($className),
             'DummyNamespace'     => $this->namespace . $namespace,
             'DummyRootNamespace' => $this->laravel->getNamespace(),
