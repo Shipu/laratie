@@ -1,4 +1,4 @@
-<h1 align="center">LaraTie</h1>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="./laratie.svg"></a></p>
 <p align="center">
     Laravel Package Development Boilerplate.
 </p>
@@ -162,8 +162,11 @@ return [
 ```
 ## Credits
 - [Shipu Ahamed](https://github.com/shipu)
+- Special Thanks to [Foysal Zafree](http://github.com/zafree)
 - [All Contributors](../../contributors)
+
 ### Security Vulnerabilities
 If you discover a security vulnerability within LaraTie, please send an e-mail to Shipu Ahamed via [shipuahamed01@gmail.com](mailto:shipuahamed01@gmail.com).
+
 ### License
 The LaraTie package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
