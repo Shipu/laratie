@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="./laratie.svg"></a></p>
+<p align="center"><a href="https://github.com/Shipu/laratie" target="_blank"><img src="./laratie.svg"></a></p>
 <p align="center">
     Laravel Package Development Boilerplate.
 </p>
