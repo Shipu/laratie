@@ -264,7 +264,8 @@ abstract class BaseCommand extends Command
     {
         $file = base_path('composer.json');
         $data = json_decode($this->filesystem->get($file), true);
-        $rootStub = $this->config->get($this->config->get('tie.stubs.root'));
+        
+        $rootStub = $this->config->get('tie.stubs.root');
         if(is_array($rootStub)) {
             $rootStub = data_get($this->config->get($rootStub), 'path',  '');
         }
