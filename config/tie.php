@@ -100,6 +100,14 @@ return [
                     'routes.php',
                 ],
             ],
+            'trait'      => [
+                'namespace' => 'Traits',
+                'path'      => 'src/Traits/',
+                'suffix'    => 'Trait',
+                'files'     => [
+                    'PACKAGE_NAME.php',
+                ],
+            ],
             'command'    => [
                 'namespace' => 'Consoles',
                 'suffix'    => 'Command',
