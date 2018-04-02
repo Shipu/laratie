@@ -90,7 +90,7 @@ abstract class BaseCommand extends Command
         $this->package = $this->setPackage();
 
         if (blank($this->vendor)) {
-            $this->vendor = !blank($this->config->get('tie.vendor')) ? $this->config->get('tie.vendor') : strtolower($this->ask('Vendor Name?'));
+            $this->vendor = !blank($this->config->get('tie.vendor')) ? $this->config->get('tie.vendor') : snake_case(strtolower($this->ask('Vendor Name?')));
         } else {
             $vendor = explode('/', $this->vendor);
             if (isset($vendor[1])) {
