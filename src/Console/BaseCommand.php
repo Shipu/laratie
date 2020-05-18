@@ -168,9 +168,17 @@ abstract class BaseCommand extends Command
         }
 
         $suffix    = data_get($configuration, 'suffix', '');
+        if(substr_compare($fileName, $suffix, -strlen($suffix))) {
+            $fileName .= $suffix;
+        }
+
         $prefix    = data_get($configuration, 'prefix', '');
+        if(substr_compare($fileName, $prefix, 0, strlen($prefix))) {
+            $fileName = $prefix . $fileName;
+        }
+
         $namespace = data_get($configuration, 'namespace', '');
-        $fileName  = $this->fileNameCaseConvention($prefix . $fileName . $suffix, $configuration);
+        $fileName  = $this->fileNameCaseConvention($fileName, $configuration);
 
         $this->makeDir($location);
         Stub::create(
