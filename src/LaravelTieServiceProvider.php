@@ -3,8 +3,8 @@
 namespace Shipu\Tie;
 
 use Illuminate\Support\ServiceProvider;
-use Shipu\Tie\Console\TieCommand;
-use Shipu\Tie\Console\TieResourceCommand;
+use Shipu\Tie\Consoles\TieCommand;
+use Shipu\Tie\Consoles\TieResourceCommand;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Laravel\Lumen\Application as LumenApplication;
 

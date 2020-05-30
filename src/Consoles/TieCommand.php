@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipu\Tie\Console;
+namespace Shipu\Tie\Consoles;
 
 class TieCommand extends BaseCommand
 {

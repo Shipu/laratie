@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipu\Tie\Console;
+namespace Shipu\Tie\Consoles;
 
 use Illuminate\Config\Repository;
 use Illuminate\Console\Command;
@@ -30,21 +30,21 @@ abstract class BaseCommand extends Command
      * @var string
      */
     protected $path;
-    
+
     /**
      * Package Name.
      *
      * @var string
      */
     protected $package;
-    
+
     /**
      * Vendor Name.
      *
      * @var Filesystem
      */
     protected $vendor;
-    
+
     /**
      * Namespace for stub class.
      *
@@ -216,7 +216,7 @@ abstract class BaseCommand extends Command
             case 'kebab':
                 return kebab_case($name);
         }
-        
+
         return $name;
     }
 
@@ -272,7 +272,7 @@ abstract class BaseCommand extends Command
     {
         $file = base_path('composer.json');
         $data = json_decode($this->filesystem->get($file), true);
-        
+
         $rootStub = $this->config->get('tie.stubs.root');
         if(is_array($rootStub)) {
             $rootStub = data_get($this->config->get($rootStub), 'path',  '');

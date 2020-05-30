@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipu\Tie\Console;
+namespace Shipu\Tie\Consoles;
 
 class TieResourceCommand extends BaseCommand
 {
@@ -10,8 +10,8 @@ class TieResourceCommand extends BaseCommand
      * @var string
      */
     protected $signature = 'package:file {vendor}
-                            {--controller=} 
-                            {--command=} 
+                            {--controller=}
+                            {--command=}
                             {--events=}
                             {--facades=}
                             {--config=}
@@ -20,7 +20,7 @@ class TieResourceCommand extends BaseCommand
                             {--provider=}
                             {--routes=}
                             {--middleware=}
-                            {--class=} 
+                            {--class=}
                             {--exceptions=}
                             {--key=}
                             ';
