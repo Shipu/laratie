@@ -8,6 +8,7 @@
 * Adding package resource using command line 
 * Easy way to define your package custom structure 
 * Adding custom stubs facilities 
+* Support Spatie Laravel Package Tools ([Read More](https://github.com/spatie/laravel-package-tools))
 
 ### Installation
 Go to terminal and run this command
