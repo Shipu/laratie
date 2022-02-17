@@ -49,7 +49,7 @@ return [
             'migration'  => [
                 'path' => 'database/migrations',
                 'case' => 'snake',
-                'extension' => 'stub',
+                'extension' => 'php.stub',
             ],
 //            'migration-legacy'  => 'database/migrations',
             'config'     => [
