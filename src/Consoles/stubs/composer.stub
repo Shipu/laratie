@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VENDOR_NAME\\PACKAGE_NAME\\Providers\\PACKAGE_NAMEServiceProvider"
+                "VENDOR_NAME\\PACKAGE_NAME\\PACKAGE_NAMEServiceProvider"
             ],
             "aliases": {
 
