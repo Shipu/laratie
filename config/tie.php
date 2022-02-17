@@ -46,7 +46,11 @@ return [
 //            ],
 //             Example config end
             'src'        => 'src/',
-            'migration'  => 'database/migrations',
+            'migration'  => [
+                'path' => 'database/migrations',
+                'case' => 'snake',
+                'extension' => 'stub',
+            ],
 //            'migration-legacy'  => 'database/migrations',
             'config'     => [
                 'path'  => 'config',
