@@ -47,6 +47,7 @@ return [
 //             Example config end
             'src'        => 'src/',
             'migration'  => 'database/migrations',
+//            'migration-legacy'  => 'database/migrations',
             'config'     => [
                 'path'  => 'config',
                 'case'  => 'kebab',
