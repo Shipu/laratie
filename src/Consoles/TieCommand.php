@@ -100,7 +100,7 @@ class TieCommand extends BaseCommand
         $this->comment(str_repeat('*', 65));
         $this->comment('  Package: '.$this->package);
         $this->output->writeln('');
-        $this->line('  Namespace: '.htmlentities($this->namespace));
+        $this->line('  Namespace: '.htmlentities(substr($this->namespace, -1) == '\\' ? rtrim($this->namespace, '\\') : $this->namespace));
         $this->output->writeln('');
         $this->comment('  Path Location: '.$this->path);
         $this->comment(str_repeat('*', 65));
