@@ -48,9 +48,9 @@ return [
             'migration'  => 'migrations',
             'config'     => [
                 'path'  => 'config',
-                'case'  => 'lower',
+                'case'  => 'kebab',
                 'files' => [
-                    'config.php',
+                    'PACKAGE_NAME.php',
                 ],
             ],
             'views'      => 'src/Resources/views',
