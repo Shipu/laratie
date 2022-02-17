@@ -45,7 +45,7 @@ return [
 //            ],
 //             Example config end
             'src'        => 'src/',
-            'migration'  => 'migrations',
+            'migration'  => 'database/migrations',
             'config'     => [
                 'path'  => 'config',
                 'case'  => 'kebab',
@@ -74,7 +74,7 @@ return [
             'provider'   => [
                 'namespace' => 'Providers',
                 'suffix'    => 'ServiceProvider',
-                'path'      => 'src/Providers',
+                'path'      => 'src/',
                 'files'     => [
                     'PACKAGE_NAME.php',
                 ],
