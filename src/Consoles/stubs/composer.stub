@@ -14,7 +14,9 @@
                 "VENDOR_NAME\\PACKAGE_NAME\\": "src/"
             }
         },
-    "require": {},
+    "require": {
+        "spatie/laravel-package-tools": "^1.9"
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
