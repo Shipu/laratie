@@ -21,7 +21,8 @@ return [
             'composer',
             'src',
             'config',
-            'provider',
+            //'provider', // laravel service provider
+            'spatie-provider', // spatie service provider
             'tests',
         ],
         'root'      => 'src/', // your root folder path which is concat with vendor/package on composer.json
@@ -72,7 +73,13 @@ return [
                 'path'      => 'src/Http/Middleware',
             ],
             'provider'   => [
-                'namespace' => 'Providers',
+                'suffix'    => 'ServiceProvider',
+                'path'      => 'src/',
+                'files'     => [
+                    'PACKAGE_NAME.php',
+                ],
+            ],
+            'spatie-provider' => [
                 'suffix'    => 'ServiceProvider',
                 'path'      => 'src/',
                 'files'     => [
