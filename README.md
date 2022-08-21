@@ -36,9 +36,9 @@ Go to terminal and run this command with replace `vendor` to your username and `
 ```shell
 php artisan package:create vendor package_name
 or 
-php artisan p:c vendor/package_name
+php artisan package:create vendor/package_name
 or 
-php artisan p:c
+php artisan package:create
 ```
 Then run `composer dump-autoload `; 
 ### Package Resources
