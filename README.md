@@ -9,6 +9,7 @@
 * Easy way to define your package custom structure 
 * Adding custom stubs facilities 
 * Support Spatie Laravel Package Tools ([Read More](https://github.com/spatie/laravel-package-tools))
+* Support [Filament](https://filamentphp.com) Plugin Development ([Read More](https://filamentphp.com/docs/2.x/admin/plugins))
 
 ### Installation
 Go to terminal and run this command
