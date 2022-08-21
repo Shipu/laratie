@@ -254,6 +254,7 @@ abstract class BaseCommand extends Command
             'PACKAGE_NAME_LOWER' => strtolower($this->package),
             'PACKAGE_NAME'       => studly_case($this->package),
             'DummyClass'         => studly_case($className),
+            'DummyModel'         => str_replace(['Resource'], [''], studly_case($className)),
             'DummyTarget'        => strtolower($className),
             'DummyNamespace'     => empty($namespace) ? rtrim($this->namespace, '\\') : $this->namespace . $namespace,
             'DummyRootNamespace' => $this->laravel->getNamespace(),
