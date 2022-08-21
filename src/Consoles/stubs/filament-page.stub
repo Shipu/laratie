@@ -8,5 +8,5 @@ class DummyClass extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
-    protected static string $view = 'filament.pages.DummyClassLower';
+    protected static string $view = 'filament.pages.DummyTarget';
 }
