@@ -22,6 +22,7 @@ return [
             'src',
             'config',
             //'provider', // laravel service provider
+            //'filament-plugin-provider' // please uncomment if you need filament plugin service provider
             'spatie-provider', // spatie service provider
             'tests',
         ],
