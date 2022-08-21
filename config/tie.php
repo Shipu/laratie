@@ -50,7 +50,7 @@ return [
             'migration'  => [
                 'path' => 'database/migrations',
                 'case' => 'snake',
-                'extension' => 'php.stub',
+                'extension' => 'php',
             ],
 //            'migration-legacy'  => 'database/migrations',
             'config'     => [
@@ -110,8 +110,6 @@ return [
                 'path'      => 'src/Http/Controllers',
                 'files'     => [
                     'PACKAGE_NAME',
-                    'one',
-                    'two.php',
                 ],
             ],
             'filament-page' => [
