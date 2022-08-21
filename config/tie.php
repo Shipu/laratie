@@ -85,6 +85,13 @@ return [
                     'PACKAGE_NAME.php',
                 ],
             ],
+            'filament-plugin-provider' => [
+                'suffix'    => 'ServiceProvider',
+                'path'      => 'src/',
+                'files'     => [
+                    'PACKAGE_NAME.php',
+                ],
+            ],
             'spatie-provider' => [
                 'suffix'    => 'ServiceProvider',
                 'path'      => 'src/',
