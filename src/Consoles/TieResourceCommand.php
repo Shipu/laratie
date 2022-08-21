@@ -24,6 +24,7 @@ class TieResourceCommand extends BaseCommand
                             {--exceptions=}
                             {--key=}
                             {--filament-resource=}
+                            {--filament-page=}
                             ';
 
     /**

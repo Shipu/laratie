@@ -114,6 +114,15 @@ return [
                     'two.php',
                 ],
             ],
+            'filament-page' => [
+                'namespace' => 'Filament\Pages',
+                'path'      => 'src/Filament/Pages'
+            ],
+            'filament-resource' => [
+                'namespace' => 'Filament\Resources',
+                'suffix'    => 'Resource',
+                'path'      => 'src/Filament/Resources'
+            ],
             'routes'     => [
                 'path'  => 'src/Routes/',
                 'files' => [
