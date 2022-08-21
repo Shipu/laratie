@@ -9,7 +9,7 @@
 * Easy way to define your package custom structure 
 * Adding custom stubs facilities 
 * Support Spatie Laravel Package Tools ([Read More](https://github.com/spatie/laravel-package-tools))
-* Support [Filament](https://filamentphp.com) Plugin Development ([Read More](https://filamentphp.com/docs/2.x/admin/plugins))
+* Support [Filament Plugin Development](https://github.com/Shipu/laratie#package-stub-configuration) ([Read More](https://filamentphp.com/docs/2.x/admin/plugins)) 
 
 ### Installation
 Go to terminal and run this command
@@ -130,11 +130,13 @@ return [
             base_path('vendor/shipu/laravel-tie/src/Consoles/stubs'),
         ],
         'default'   => [
-            // default stub key here, For Example your stubkey look like
+            // default folder structure with stub key
             'composer',
             'src',
             'config',
-            'provider',
+            //'provider', // laravel service provider
+            //'filament-plugin-provider', // please uncomment if you need filament plugin service provider
+            'spatie-provider', // spatie service provider. comment if you using filament plugin provider
             'tests',
         ],
         'root'      => 'stubKey', // folder path which is concating with vendor/package on composer.json
