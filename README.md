@@ -32,7 +32,7 @@ php artisan vendor:publish --tag=tie-config
 ```
 
 ## Quick Usages
-Go to terminal and run this command
+Go to terminal and run this command with replace `vendor` to your username and `package_name` to your package name
 ```shell
 php artisan package:create vendor package_name
 or 
